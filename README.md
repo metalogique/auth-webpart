@@ -1,6 +1,9 @@
 ## auth-webpart
 
-This is where you include your WebPart documentation.
+This is a simple helper webpart to confirm that a serve can accept the current user OAuth token.
+The only part that might have to be fixe for your use case is in */config/package-solution.json*, 
+setting a valid value for `{ "resource": "Authentication Azure Function" }` so as to who this webpart 
+will authenticate as / for.
 
 ### Building the code
 
@@ -19,8 +22,12 @@ This package produces the following:
 
 ### Build options
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+gulp clean
+
+gulp test
+
+gulp serve
+
+gulp bundle
+
+gulp package-solution
