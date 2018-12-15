@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "authentication-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/authentication/AuthenticationWebPart.js",
+          "manifest": "./src/webparts/authentication/AuthenticationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AuthenticationWebPartStrings": "lib/webparts/authentication/loc/{locale}.js"
+  }
+}

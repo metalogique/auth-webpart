@@ -1,0 +1,48 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.authentication {
+
+  .container {
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .firstRow {
+    // @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themePrimary;
+    padding: 20px;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    padding: 20px;
+  }
+
+  .columnInput {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md9;
+  }
+  
+  .columnButton {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md3;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-sm12;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .textLabel {
+    @include ms-fontColor-white;
+  }
+}

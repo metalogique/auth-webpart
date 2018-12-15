@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Authentication debug",
+    "id": "30431371-5441-4325-9677-3723dc05440a",
+    "version": "1.0.11.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [{
+      "resource": "Authentication Azure Function",
+      "scope": "user_impersonation"
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/auth-webpart.sppkg"
+  }
+}
