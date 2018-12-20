@@ -1,11 +1,18 @@
-## auth-webpart
+# auth-webpart
 
-This is a simple helper webpart to confirm that a serve can accept the current user OAuth token.
-The only part that might have to be fixe for your use case is in */config/package-solution.json*, 
-setting a valid value for `{ "resource": "Authentication Azure Function" }` so as to who this webpart 
-will authenticate as / for.
+This is a simple helper webpart to confirm that a service can accept the current user OAuth token.
+The only part that needs have to be changed is in */config/package-solution.json*, 
+setting a valid webApiPermissionRequests so as to who this webpart will authenticate as / for.
 
-### Building the code
+Ex.:
+```
+"webApiPermissionRequests": [{
+    "resource": "Authentication Azure Function",
+    "scope": "user_impersonation"
+}]
+```
+
+## Building the code
 
 ```bash
 git clone the repo
@@ -20,7 +27,16 @@ This package produces the following:
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
-### Build options
+## Azure function
+
+See  `/azure-function/run.csx`, for code sample to echo back the `ClaimsPrincipals` received by an Azure Function.
+
+### Seting-up the Azure function
+
+
+
+
+## Build options
 
 gulp clean
 
@@ -28,6 +44,6 @@ gulp test
 
 gulp serve
 
-gulp bundle
+gulp bundle --ship
 
-gulp package-solution
+gulp package-solution --ship

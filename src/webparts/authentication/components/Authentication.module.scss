@@ -25,6 +25,12 @@
     @include ms-sm12;
     @include ms-md9;
   }
+
+  .columnHalfInput {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md6;
+  }
   
   .columnButton {
     @include ms-Grid-col;
