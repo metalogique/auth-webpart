@@ -3,7 +3,7 @@
   "solution": {
     "name": "Authentication debug",
     "id": "30431371-5441-4325-9677-3723dc05440a",
-    "version": "1.0.11.0",
+    "version": "1.0.14.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
     "webApiPermissionRequests": [{
